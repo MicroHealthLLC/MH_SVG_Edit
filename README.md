@@ -1,3 +1,15 @@
+# MH SVG Edit
+
+This app extends SVG-edit (see below). Features a sliding panel with files listing and search by file name.
+
+### Instructions
+- Download Files
+- Use localhost to view index.html
+
+
+__________________________________________________________________________________________________________________
+
+
 ![alt text](https://svg-edit.github.io/svgedit/images/logo48x48.svg "svg-edit logo of a pencil") SVG-edit 
 ===
 SVG-edit is a fast, web-based, javascript-driven SVG drawing editor that works in any modern browser.

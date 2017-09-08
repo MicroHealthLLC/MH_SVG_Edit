@@ -2527,8 +2527,7 @@ var onlysave = false;
 					rule_elem.empty();
 				}
 
-			//	if (size !== 'm') {  //NOTE: Orginal code
-				if (size === 'm') {
+				if (size !== 'm') {
 					var styleStr = '';
 					$.each(cssResizeRules, function(selector, rules) {
 						selector = '#svg_editor ' + selector.replace(/,/g,', #svg_editor');
@@ -2977,11 +2976,9 @@ var onlysave = false;
 						callback: function (icons) {
 							// Non-ideal hack to make the icon match the current size
 							//if (curPrefs.iconsize && curPrefs.iconsize !== 'm') {
-						/*
 							if ($.pref('iconsize') !== 'm') {
 								prepResize();
 							}
-						*/
 							cb_ready = true; // Ready for callback
 							runCallback();
 						}

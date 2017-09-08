@@ -11,7 +11,6 @@
 <link rel="stylesheet" href="jgraduate/css/jgraduate.css" type="text/css"/>
 <link rel="stylesheet" href="svg-editor.css" type="text/css"/>
 <link rel="stylesheet" href="spinbtn/JQuerySpinBtn.css" type="text/css"/>
-<link rel="stylesheet" href="svg-editor.css" type="text/css"/>
 <link rel="stylesheet" href="custom.css" type="text/css"/>
 <!--{if jquery_release}>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -70,8 +69,6 @@ by creating the following file and adding by calls to svgEditor.setConfig -->
 
 <!-- Add script with custom handlers here -->
 
-<style>
-</style>
 
 <title>MH SVG Edit</title>
 </head>
@@ -110,6 +107,18 @@ by creating the following file and adding by calls to svgEditor.setConfig -->
 	</div>
 </div>
 
+
+<div id="svglistingdiv">
+    <div id="list_search" class="slide slide-up">
+        <p><span id="list_name"><span id="mh">MH</span> SVG Edit</span></p>
+        <input type="text" id="searchfiles" name="searchfiles" />
+        <button id="searchbtn" class="flrtbtn iconbtn" title="Search Listing"><img src="images/glyphicons-28-search.png"></button>
+        <div id="fileslisting">
+        </div>
+        <p id="listnote">NOTE: Download files prior to closing browser window.</p>
+        <button id="closeSliderbtn" class="flrtbtn iconbtn" title="Close SVG Listings and Search Panel"><img src="images/glyphicons-370-collapse-top.png"></button>
+    </div>
+</div>
 
 
 <div id="svg_editor">
@@ -767,19 +776,6 @@ by creating the following file and adding by calls to svgEditor.setConfig -->
 	<li><a href="#merge_down">Merge Down</a></li>
 	<li><a href="#merge_all">Merge All</a></li>
 </ul>
-
-
-<div id="svglistingdiv">
-    <div id="list_search" class="slide slide-up">
-        <p><span id="list_name"><span id="mh">MH</span> SVG Edit</span></p>
-        <input type="text" id="searchfiles" name="searchfiles" />
-        <button id="searchbtn" class="flrtbtn iconbtn" title="Search Listing"><img src="images/glyphicons-28-search.png"></button>
-        <div id="fileslisting">
-        </div>
-        <p id="listnote">NOTE: Download files prior to closing browser window.</p>
-        <button id="closeSliderbtn" class="flrtbtn iconbtn" title="Close SVG Listings and Search Panel"><img src="images/glyphicons-370-collapse-top.png"></button>
-    </div>
-</div>
 
 
 <script src="svgedit_script.js"></script>
